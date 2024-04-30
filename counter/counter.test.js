@@ -38,3 +38,15 @@ test("counter is incremented when clicked", async function () {
   await user.click(counter)
   expect(counter).toHaveTextContent("1")
 })
+
+test("counter is incremented when clicked (using role)", async function () {
+  initDomFromFiles(
+    __dirname + "/counter.html",
+    __dirname + "/counter.js"
+  )
+  const counter = domTesting.getByRole(document, "button")
+  expect(counter).toHaveTextContent("0")
+  const user = userEvent.setup()
+  await user.click(counter)
+  expect(counter).toHaveTextContent("1")
+})

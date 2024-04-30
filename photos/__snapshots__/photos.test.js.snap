@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`photo card is created when URL and caption are provided 1`] = `
+<ul
+  id="photo-card-list"
+>
+  <li
+    class="photo-card"
+  >
+    <img
+      alt="Kitty photo"
+      src="http://placekitten.com/480/480"
+    />
+    <p>
+      Kitty photo
+    </p>
+  </li>
+  <li
+    class="photo-card"
+  >
+    <img
+      alt="Kitty photo #3"
+      src="http://placekitten.com/320/320"
+    />
+    <p>
+      Kitty photo #3
+    </p>
+  </li>
+</ul>
+`;
